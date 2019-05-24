@@ -3,8 +3,12 @@ package Model;
 
 public class WorkerUnit extends Unit {
     private int workSkill;
+    private String WORKER_CLASS = "Worker";
 
-
+    public WorkerUnit(int workSkill, double health, double movementSpeed){
+        super(health, movementSpeed);
+        setWorkSkill(workSkill);
+    }
     public int getWorkSkill() {
         return workSkill;
     }
@@ -13,9 +17,13 @@ public class WorkerUnit extends Unit {
         this.workSkill = workSkill;
     }
 
+    public String getWORKER_CLASS() {
+        return WORKER_CLASS;
+    }
+
     @Override
     public String toString() {
-        return super.toString();
+        return getWORKER_CLASS()+ " Skill: "+getWorkSkill()+" " +super.toString();
     }
 
     @Override

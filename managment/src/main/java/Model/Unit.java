@@ -5,6 +5,10 @@ public class Unit {
     private double health;
     private double movementSpeed;
 
+    public Unit (double health, double movementSpeed){
+        setHealth(health);
+        setMovementSpeed(movementSpeed);
+    }
     public void setHealth(double health) {
         this.health = health;
     }
