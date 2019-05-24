@@ -1,6 +1,5 @@
 package Model;
 
-import java.util.Objects;
 
 public class Unit {
     private double health;
@@ -36,8 +35,5 @@ public class Unit {
                 Double.compare(unit.movementSpeed, movementSpeed) == 0;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(health, movementSpeed);
-    }
+
 }

@@ -1,6 +1,5 @@
 package Model;
 
-import java.util.Objects;
 
 public class WorkerUnit extends Unit {
     private int workSkill;
@@ -28,8 +27,4 @@ public class WorkerUnit extends Unit {
         return workSkill == that.workSkill;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), workSkill);
-    }
 }
